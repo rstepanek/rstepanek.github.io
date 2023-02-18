@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Self-driving car</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="carDemoContainer">
+		<div id="canvasContainer">
+			<canvas id="carCanvas"></canvas>
+			<canvas id="networkCanvas"></canvas>
+		</div>
+		<div id="controlContainer">
+	        <button onclick="save()">💾 Save Best Model</button>
+	        <button onclick="discard()">🗑️ Delete Best Model</button>
+	        <span>Number of Parrallel Vehicle Simulations</span>
+	        <span>Mutation Rate</span>
+	        <span>Low-Res Mode</span>
+	        <span>Number of Sensors</span>
+	    </div>
+	</div>
+	<script src="visualizer.js"></script>
+	<script id="networkCanvas.js"></script>
+	<script src="network.js"></script>
+	<script src="sensor.js"></script>
+	<script src="utils.js"></script>
+	<script src="road.js"></script>
+	<script src="controls.js"></script>
+	<script src="car.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

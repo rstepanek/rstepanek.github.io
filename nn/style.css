@@ -1,0 +1,68 @@
+/*body{
+    margin:0;
+}*/
+#controlContainer{
+    background-color: rgba(255,255,255,0.98);
+    flex-grow: 1;
+}
+#controlContainer,  #controlContainer dl{
+    display:flex;
+    flex-wrap: wrap;
+    color: black;
+    align-items: center;
+}
+#lowresmode{
+    margin:auto;
+}
+#controlContainer dl dd{
+    padding: 0.2em;
+    border: solid;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 2px;
+    width: 3em;
+    height: 2em;
+    margin-left: 0.4em;
+    margin-right: 1em;
+    font-size: small;
+}
+#carDemoContainer{
+    padding-top:0px;
+	height: 100vh;
+	display: flex;
+    background:forestgreen;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-style: solid;
+    border-color: black;
+    border-width: medium;
+    border-radius: 2px;
+}
+#canvasContainer{
+	height:80vh;
+    display: flex;
+}
+/*#canvasContainer canvas{
+    object-fit: fill;
+}*/
+#controlContainer button,#controlContainer span{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor:pointer;
+}
+ #controlContainer button:hover{
+    background:blue;
+}
+
+#networkCanvas{
+    background:black;
+}
+#carCanvas{
+    background:lightgray;
+}
