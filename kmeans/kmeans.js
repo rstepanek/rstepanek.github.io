@@ -155,7 +155,7 @@ function init() {
 
     if (!manualPlacement) {
         for (var i = 0; i < K; i++) {
-            groups.push(place(i, K, Math.random() * WIDTH*0.95, Math.random() * HEIGHT*0.95));
+            groups.push(place(i, K, WIDTH*0.02 + Math.random() * WIDTH*0.96, HEIGHT*0.02 + Math.random() * HEIGHT*0.96));
         }
     } else {
         d3.select("#kmeans svg").on("click", function() {
@@ -183,8 +183,8 @@ function pushRands(N) {
     dots = []
     for (i = 0; i < N; i++) {
             var dot = {
-                x: Math.random() * WIDTH*0.95,
-                y: Math.random() * HEIGHT*0.95,
+                x: WIDTH*0.02 + Math.random() * WIDTH*0.96,
+                y: HEIGHT*0.02 + Math.random() * HEIGHT*0.96,
                 group: undefined
             };
             dot.init = {
@@ -200,8 +200,8 @@ function pushRands(N) {
 function pushCentroids(N, K) {
     dots = [];
     for (i = 0; i < K; i++) {
-        var cX = Math.random() * WIDTH;
-        var cY = Math.random() * HEIGHT;
+        var cX = WIDTH*0.02 + Math.random() * WIDTH*0.96
+        var cY = HEIGHT*0.02 + Math.random() * HEIGHT*0.96;
         var cW = getRandomArbitrary(50,125);
         var cH = getRandomArbitrary(50,125);
         for (j = 0; j < N/K; j++) {
