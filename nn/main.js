@@ -1,12 +1,3 @@
-/*
-* TODO: add nextround/start button
-* add round tracker
-* add code to advance to next round
-* make cars not saved too browser cache,
-* changed values take effect on start over,
-* except for mutation rate and num parallel
-*/
-
 class CarSim{
     constructor(){
         this.N = 80;

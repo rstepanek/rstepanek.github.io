@@ -120,14 +120,6 @@ class Car{
         return points;
     }
 
-    #detect_bumper_rider(){
-        let motions = this.control_log.view();
-        let num_backwards = 0;
-        for(let i=0;i<motions.size;i++){
-            if(motions.get(i)==3) num_backwards++;
-        }
-        return (num_backwards>4)?true:false;
-    }
     #blowup_car(){
         this.damaged = true;
     }
